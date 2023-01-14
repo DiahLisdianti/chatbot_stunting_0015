@@ -1,0 +1,119 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: satu path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_happy
+  - intent: tanya_satu
+  - action: utter_tanya_satu
+
+- story: dua path
+  steps:
+  - intent: tanya_dua
+  - action: utter_tanya_dua
+
+- story: tiga path
+  steps:
+  - intent: tanya_tiga
+  - action: utter_tanya_tiga
+
+- story: empat path
+  steps:
+  - intent: tanya_empat
+  - action: utter_tanya_empat
+
+- story: lima path
+  steps:
+  - intent: tanya_lima
+  - action: utter_tanya_lima
+
+- story: enam path
+  steps:
+  - intent: tanya_enam
+  - action: utter_tanya_enam
+
+- story: tujuh path
+  steps:
+  - intent: tanya_tujuh
+  - action: utter_tanya_tujuh
+
+- story: delapan path
+  steps:
+  - intent: tanya_delapan
+  - action: utter_tanya_delapan
+
+- story: sembilan path
+  steps:
+  - intent: tanya_sembilan
+  - action: utter_tanya_sembilan
+
+- story: sepuluh path
+  steps:
+  - intent: tanya_sepuluh
+  - action: utter_tanya_sepuluh
+
+- story: sebelas path
+  steps:
+  - intent: tanya_sebelas
+  - action: utter_tanya_sebelas
+
+- story: duabelas path
+  steps:
+  - intent: tanya_duabelas
+  - action: utter_tanya_duabelas
+
+- story: tigabelas path
+  steps:
+  - intent: tanya_tigabelas
+  - action: utter_tanya_tigabelas
+
+- story: empatbelas path
+  steps:
+  - intent: tanya_empatbelas
+  - action: utter_tanya_empatbelas
+
+- story: limabelas path
+  steps:
+  - intent: tanya_limabelas
+  - action: utter_tanya_limabelas
+
+- story: enambelas path
+  steps:
+  - intent: tanya_enambelas
+  - action: utter_tanya_enambelas
+
+- story: tujuhbelas path
+  steps:
+  - intent: tanya_tujuh
+  - action: utter_tanya_tujuhbelas
